@@ -9,7 +9,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.forger.dreamsofdivinity.client.particle.SmokeParticle;
-import net.forger.dreamsofdivinity.client.particle.WaterMagicParticle;
 import net.forger.dreamsofdivinity.client.particle.Smoke2Particle;
 import net.forger.dreamsofdivinity.client.particle.Flame3Particle;
 import net.forger.dreamsofdivinity.client.particle.Flame32Particle;
@@ -28,6 +27,5 @@ public class DreamsOfDivinityModParticles {
 		event.registerSpriteSet(DreamsOfDivinityModParticleTypes.FLAME_22.get(), Flame22Particle::provider);
 		event.registerSpriteSet(DreamsOfDivinityModParticleTypes.FLAME_32.get(), Flame32Particle::provider);
 		event.registerSpriteSet(DreamsOfDivinityModParticleTypes.SMOKE_2.get(), Smoke2Particle::provider);
-		event.registerSpriteSet(DreamsOfDivinityModParticleTypes.WATER_MAGIC.get(), WaterMagicParticle::provider);
 	}
 }
