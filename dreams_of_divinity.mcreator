@@ -176,9 +176,9 @@
       "registry_name": "keybind_select",
       "metadata": {
         "files": [
-          "src/main/java/net/forger/dreamsofdivinity/client/gui/KeybindSelectScreen.java",
           "src/main/java/net/forger/dreamsofdivinity/network/KeybindSelectButtonMessage.java",
-          "src/main/java/net/forger/dreamsofdivinity/world/inventory/KeybindSelectMenu.java"
+          "src/main/java/net/forger/dreamsofdivinity/world/inventory/KeybindSelectMenu.java",
+          "src/main/java/net/forger/dreamsofdivinity/client/gui/KeybindSelectScreen.java"
         ]
       }
     },
@@ -191,8 +191,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/forger/dreamsofdivinity/world/inventory/Magic1Menu.java",
-          "src/main/java/net/forger/dreamsofdivinity/network/Magic1ButtonMessage.java",
-          "src/main/java/net/forger/dreamsofdivinity/client/gui/Magic1Screen.java"
+          "src/main/java/net/forger/dreamsofdivinity/client/gui/Magic1Screen.java",
+          "src/main/java/net/forger/dreamsofdivinity/network/Magic1ButtonMessage.java"
         ]
       }
     },
@@ -961,9 +961,9 @@
       "registry_name": "projectile_2",
       "metadata": {
         "files": [
-          "src/main/java/net/forger/dreamsofdivinity/world/inventory/Projectile2Menu.java",
+          "src/main/java/net/forger/dreamsofdivinity/client/gui/Projectile2Screen.java",
           "src/main/java/net/forger/dreamsofdivinity/network/Projectile2ButtonMessage.java",
-          "src/main/java/net/forger/dreamsofdivinity/client/gui/Projectile2Screen.java"
+          "src/main/java/net/forger/dreamsofdivinity/world/inventory/Projectile2Menu.java"
         ]
       }
     },
@@ -1196,8 +1196,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/forger/dreamsofdivinity/world/inventory/Projectile3Menu.java",
-          "src/main/java/net/forger/dreamsofdivinity/client/gui/Projectile3Screen.java",
-          "src/main/java/net/forger/dreamsofdivinity/network/Projectile3ButtonMessage.java"
+          "src/main/java/net/forger/dreamsofdivinity/network/Projectile3ButtonMessage.java",
+          "src/main/java/net/forger/dreamsofdivinity/client/gui/Projectile3Screen.java"
         ]
       }
     },
@@ -1519,9 +1519,9 @@
       "registry_name": "projectile_4",
       "metadata": {
         "files": [
-          "src/main/java/net/forger/dreamsofdivinity/world/inventory/Projectile4Menu.java",
+          "src/main/java/net/forger/dreamsofdivinity/network/Projectile4ButtonMessage.java",
           "src/main/java/net/forger/dreamsofdivinity/client/gui/Projectile4Screen.java",
-          "src/main/java/net/forger/dreamsofdivinity/network/Projectile4ButtonMessage.java"
+          "src/main/java/net/forger/dreamsofdivinity/world/inventory/Projectile4Menu.java"
         ]
       }
     },
@@ -2278,8 +2278,8 @@
       "registry_name": "flame_2",
       "metadata": {
         "files": [
-          "src/main/java/net/forger/dreamsofdivinity/client/particle/Flame2Particle.java",
-          "src/main/resources/assets/dreams_of_divinity/particles/flame_2.json"
+          "src/main/resources/assets/dreams_of_divinity/particles/flame_2.json",
+          "src/main/java/net/forger/dreamsofdivinity/client/particle/Flame2Particle.java"
         ]
       }
     },
@@ -2291,8 +2291,8 @@
       "registry_name": "flame_3",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dreams_of_divinity/particles/flame_3.json",
-          "src/main/java/net/forger/dreamsofdivinity/client/particle/Flame3Particle.java"
+          "src/main/java/net/forger/dreamsofdivinity/client/particle/Flame3Particle.java",
+          "src/main/resources/assets/dreams_of_divinity/particles/flame_3.json"
         ]
       }
     },
@@ -2304,8 +2304,8 @@
       "registry_name": "smoke",
       "metadata": {
         "files": [
-          "src/main/java/net/forger/dreamsofdivinity/client/particle/SmokeParticle.java",
-          "src/main/resources/assets/dreams_of_divinity/particles/smoke.json"
+          "src/main/resources/assets/dreams_of_divinity/particles/smoke.json",
+          "src/main/java/net/forger/dreamsofdivinity/client/particle/SmokeParticle.java"
         ]
       }
     },
@@ -2397,8 +2397,8 @@
       "registry_name": "smoke_2",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dreams_of_divinity/particles/smoke_2.json",
-          "src/main/java/net/forger/dreamsofdivinity/client/particle/Smoke2Particle.java"
+          "src/main/java/net/forger/dreamsofdivinity/client/particle/Smoke2Particle.java",
+          "src/main/resources/assets/dreams_of_divinity/particles/smoke_2.json"
         ]
       }
     },
@@ -3234,8 +3234,8 @@
       "registry_name": "armor_fire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dreams_of_divinity/models/item/armor_fire.json",
-          "src/main/java/net/forger/dreamsofdivinity/item/ArmorFireItem.java"
+          "src/main/java/net/forger/dreamsofdivinity/item/ArmorFireItem.java",
+          "src/main/resources/assets/dreams_of_divinity/models/item/armor_fire.json"
         ]
       }
     },
@@ -3311,9 +3311,9 @@
       "registry_name": "spell_edit_menu",
       "metadata": {
         "files": [
-          "src/main/java/net/forger/dreamsofdivinity/client/gui/SpellEditMenuScreen.java",
           "src/main/java/net/forger/dreamsofdivinity/world/inventory/SpellEditMenuMenu.java",
-          "src/main/java/net/forger/dreamsofdivinity/network/SpellEditMenuButtonMessage.java"
+          "src/main/java/net/forger/dreamsofdivinity/network/SpellEditMenuButtonMessage.java",
+          "src/main/java/net/forger/dreamsofdivinity/client/gui/SpellEditMenuScreen.java"
         ]
       }
     },
@@ -3363,8 +3363,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/forger/dreamsofdivinity/network/SpellEditMenu2ButtonMessage.java",
-          "src/main/java/net/forger/dreamsofdivinity/client/gui/SpellEditMenu2Screen.java",
-          "src/main/java/net/forger/dreamsofdivinity/world/inventory/SpellEditMenu2Menu.java"
+          "src/main/java/net/forger/dreamsofdivinity/world/inventory/SpellEditMenu2Menu.java",
+          "src/main/java/net/forger/dreamsofdivinity/client/gui/SpellEditMenu2Screen.java"
         ]
       }
     },
@@ -4269,8 +4269,8 @@
       "registry_name": "party_settings",
       "metadata": {
         "files": [
-          "src/main/java/net/forger/dreamsofdivinity/world/inventory/PartySettingsMenu.java",
           "src/main/java/net/forger/dreamsofdivinity/client/gui/PartySettingsScreen.java",
+          "src/main/java/net/forger/dreamsofdivinity/world/inventory/PartySettingsMenu.java",
           "src/main/java/net/forger/dreamsofdivinity/network/PartySettingsButtonMessage.java"
         ]
       }
@@ -5296,9 +5296,9 @@
       "registry_name": "block_inscription_wand_gui_2",
       "metadata": {
         "files": [
-          "src/main/java/net/forger/dreamsofdivinity/network/BlockInscriptionWandGUI2ButtonMessage.java",
           "src/main/java/net/forger/dreamsofdivinity/world/inventory/BlockInscriptionWandGUI2Menu.java",
-          "src/main/java/net/forger/dreamsofdivinity/client/gui/BlockInscriptionWandGUI2Screen.java"
+          "src/main/java/net/forger/dreamsofdivinity/client/gui/BlockInscriptionWandGUI2Screen.java",
+          "src/main/java/net/forger/dreamsofdivinity/network/BlockInscriptionWandGUI2ButtonMessage.java"
         ]
       }
     },
@@ -5424,10 +5424,10 @@
         "files": [
           "src/main/resources/assets/dreams_of_divinity/models/block/inscriptionblock.json",
           "src/main/resources/data/dreams_of_divinity/loot_table/blocks/inscriptionblock.json",
-          "src/main/resources/assets/dreams_of_divinity/models/item/inscriptionblock.json",
-          "src/main/resources/assets/dreams_of_divinity/blockstates/inscriptionblock.json",
           "src/main/java/net/forger/dreamsofdivinity/block/InscriptionblockBlock.java",
-          "src/main/java/net/forger/dreamsofdivinity/block/entity/InscriptionblockBlockEntity.java"
+          "src/main/java/net/forger/dreamsofdivinity/block/entity/InscriptionblockBlockEntity.java",
+          "src/main/resources/assets/dreams_of_divinity/models/item/inscriptionblock.json",
+          "src/main/resources/assets/dreams_of_divinity/blockstates/inscriptionblock.json"
         ]
       }
     },
@@ -5511,9 +5511,9 @@
       "registry_name": "inscription_spell_entity",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dreams_of_divinity/models/item/inscription_spell_entity_spawn_egg.json",
+          "src/main/java/net/forger/dreamsofdivinity/client/renderer/InscriptionSpellEntityRenderer.java",
           "src/main/java/net/forger/dreamsofdivinity/entity/InscriptionSpellEntityEntity.java",
-          "src/main/java/net/forger/dreamsofdivinity/client/renderer/InscriptionSpellEntityRenderer.java"
+          "src/main/resources/assets/dreams_of_divinity/models/item/inscription_spell_entity_spawn_egg.json"
         ]
       }
     },
@@ -5819,13 +5819,13 @@
       "registry_name": "spirit_forge",
       "metadata": {
         "files": [
-          "src/main/java/net/forger/dreamsofdivinity/block/SpiritForgeBlock.java",
+          "src/main/java/net/forger/dreamsofdivinity/client/renderer/block/SpiritForgeRenderer.java",
           "src/main/java/net/forger/dreamsofdivinity/block/entity/SpiritForgeBlockEntity.java",
-          "src/main/resources/data/dreams_of_divinity/loot_table/blocks/spirit_forge.json",
           "src/main/resources/assets/dreams_of_divinity/models/item/spirit_forge.json",
           "src/main/resources/assets/dreams_of_divinity/models/block/spirit_forge.json",
-          "src/main/java/net/forger/dreamsofdivinity/client/renderer/block/SpiritForgeRenderer.java",
-          "src/main/resources/assets/dreams_of_divinity/blockstates/spirit_forge.json"
+          "src/main/resources/data/dreams_of_divinity/loot_table/blocks/spirit_forge.json",
+          "src/main/resources/assets/dreams_of_divinity/blockstates/spirit_forge.json",
+          "src/main/java/net/forger/dreamsofdivinity/block/SpiritForgeBlock.java"
         ]
       }
     },
@@ -5863,9 +5863,9 @@
       "registry_name": "spirit_forge_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/forger/dreamsofdivinity/world/inventory/SpiritForgeGUIMenu.java",
+          "src/main/java/net/forger/dreamsofdivinity/network/SpiritForgeGUIButtonMessage.java",
           "src/main/java/net/forger/dreamsofdivinity/client/gui/SpiritForgeGUIScreen.java",
-          "src/main/java/net/forger/dreamsofdivinity/network/SpiritForgeGUIButtonMessage.java"
+          "src/main/java/net/forger/dreamsofdivinity/world/inventory/SpiritForgeGUIMenu.java"
         ]
       }
     },
@@ -7929,7 +7929,8 @@
       "item.dreams_of_divinity.spirit_fusion_stone": "Spirit Fusion Stone",
       "gui.dreams_of_divinity.spirit_forge_gui.label_empty1": "=",
       "gui.dreams_of_divinity.spirit_forge_gui.label_empty": "+",
-      "gui.dreams_of_divinity.spirit_forge_gui.button_fuse": "Fuse"
+      "gui.dreams_of_divinity.spirit_forge_gui.button_fuse": "Fuse",
+      "gui.dreams_of_divinity.overlays.label_magic_selected": "Magic Selected:"
     }
   },
   "metadata": {

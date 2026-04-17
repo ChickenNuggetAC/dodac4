@@ -330,8 +330,4 @@
   "gui.dreams_of_divinity.spirit_forge_gui.label_empty1": "=",
   "gui.dreams_of_divinity.spirit_forge_gui.label_empty": "+",
   "gui.dreams_of_divinity.spirit_forge_gui.button_fuse": "Fuse",
-  "effect.dreams_of_divinity.wet": "Wet",
-  "subtitles.watersummon": "water summon",
-  "subtitles.waterflow": "water flow",
-  "subtitles.waterburst": "water burst"
-}
+
