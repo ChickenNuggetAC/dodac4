@@ -52,7 +52,7 @@ public record MagicSelection1ButtonMessage(int buttonID, int x, int y, int z) im
 			return;
 		if (buttonID == 0) {
 
-			WaterClickedProcedure.execute();
+			WaterClickedProcedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
