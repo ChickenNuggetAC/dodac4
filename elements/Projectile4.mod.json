@@ -1,0 +1,336 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow21",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "Projectile2Button"
+          },
+          "x": 387,
+          "y": 200,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow11",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "Projectile3Button"
+          },
+          "x": 7,
+          "y": 200,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_power",
+          "text": {
+            "fixedValue": "Multi Cast"
+          },
+          "color": {
+            "value": -10092289,
+            "falpha": 0.0
+          },
+          "x": 188,
+          "y": 109,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow13",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MultiCastDown"
+          },
+          "x": 147,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow23",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MultiCastUp"
+          },
+          "x": 247,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_selection_multiplier",
+          "text": {
+            "fixedValue": "Selection Multiplier"
+          },
+          "color": {
+            "value": -6750004,
+            "falpha": 0.0
+          },
+          "x": 7,
+          "y": 4,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow24",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "SelectionMultiplierUp"
+          },
+          "x": 84,
+          "y": 15,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow14",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "SelectionMultiplierDown"
+          },
+          "x": 0,
+          "y": 15,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_selection_multiplier_number",
+          "text": {
+            "fixedValue": "",
+            "name": "SelectionMultiplierNumberDisplay"
+          },
+          "color": {
+            "value": -6750004,
+            "falpha": 0.0
+          },
+          "x": 50,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_power_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MultiCastDisplay"
+          },
+          "color": {
+            "value": -10092289,
+            "falpha": 0.0
+          },
+          "x": 211,
+          "y": 130,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_reset",
+          "text": "Reset?",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "SelectionMultiplierReset"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 45,
+          "y": 45,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_cost_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicCostDisplay"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 331,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_skill_cost",
+          "text": {
+            "fixedValue": "Skill Cost:"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 273,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_guided_magic",
+          "text": {
+            "fixedValue": "Guided Magic"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "x": 182,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_on",
+          "text": "ON",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GuidedMagicOff"
+          },
+          "displayCondition": {
+            "name": "GuidedMagicOnDisplay"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 197,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_off",
+          "text": "OFF",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GuidedMagicOn"
+          },
+          "displayCondition": {
+            "name": "GuidedMagicOffDisplay"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 194,
+          "y": 68,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_multicast_area_coverage",
+          "text": {
+            "fixedValue": "Multicast Area Coverage"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "x": 155,
+          "y": 164,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow2",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MultiCastAreaCoverageUp"
+          },
+          "x": 246,
+          "y": 181,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow1",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MultiCastAreaCoverageDown"
+          },
+          "x": 147,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_multi_cast_area_coverage_di",
+          "text": {
+            "fixedValue": "",
+            "name": "MultiCastAreaCoverageDisplay"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "x": 206,
+          "y": 191,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 12,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

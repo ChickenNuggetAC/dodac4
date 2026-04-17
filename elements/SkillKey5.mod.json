@@ -1,0 +1,15 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "R",
+    "keyBindingName": "Skill Key 5",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "SkillKey5OnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "SkillKey1OnKeyReleased"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Movement Up",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "MovementUpOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "MovementForwardOnKeyReleased"
+    }
+  }
+}

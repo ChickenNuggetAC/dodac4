@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "U",
+    "keyBindingName": "Open Skill Menu",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "OpenSkillMenuOnKeyPressed"
+    }
+  }
+}

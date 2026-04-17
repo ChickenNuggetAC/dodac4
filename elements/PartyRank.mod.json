@@ -1,0 +1,14 @@
+{
+  "_fv": 79,
+  "_type": "attribute",
+  "definition": {
+    "name": "Party Rank",
+    "minValue": 0.0,
+    "maxValue": 4.0,
+    "defaultValue": 0.0,
+    "sentiment": "NEUTRAL",
+    "addToAllEntities": true,
+    "addToPlayers": false,
+    "entities": []
+  }
+}

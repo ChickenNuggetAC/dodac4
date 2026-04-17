@@ -1,0 +1,1643 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow11",
+          "image": "leftarrowselect.png",
+          "hoveredImage": "leftarrow.png",
+          "onClick": {
+            "name": "Magic1Button"
+          },
+          "x": 20,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_selection_multiplier",
+          "text": {
+            "fixedValue": "selection multiplier"
+          },
+          "color": {
+            "value": -13434778,
+            "falpha": 0.0
+          },
+          "x": 6,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "SelectionMultiplier",
+          "width": 120,
+          "height": 20,
+          "x": 6,
+          "y": 17,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magicdirection",
+          "text": {
+            "fixedValue": "Magic Direction"
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 27,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "MagicDirectionDown"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 6,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "MagicDirectionUp"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 111,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_forward",
+          "text": {
+            "fixedValue": "forward"
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplay1"
+          },
+          "x": 41,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_backward",
+          "text": {
+            "fixedValue": "backward"
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplayBackward"
+          },
+          "x": 41,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_left",
+          "text": {
+            "fixedValue": "left"
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplayLeft"
+          },
+          "x": 48,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_right",
+          "text": {
+            "fixedValue": "right"
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplayRight"
+          },
+          "x": 48,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_up",
+          "text": {
+            "fixedValue": "up"
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplayDown"
+          },
+          "x": 55,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_down",
+          "text": {
+            "fixedValue": "down"
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplayUp"
+          },
+          "x": 48,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_random",
+          "text": {
+            "fixedValue": "random"
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplayRandom"
+          },
+          "x": 41,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_speed",
+          "text": {
+            "fixedValue": "Spell Speed"
+          },
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 34,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow1",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "MagicSpeedDown"
+          },
+          "x": 6,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow1",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "MagicSpeedUp"
+          },
+          "x": 97,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_speed_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicSpeedDisplay"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "x": 41,
+          "y": 92,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_attack_speed",
+          "text": {
+            "fixedValue": "Attack Speed"
+          },
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay2"
+          },
+          "x": 27,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empower",
+          "text": {
+            "fixedValue": "empower"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "x": 41,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_movement",
+          "text": {
+            "fixedValue": "Magic Movement"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 20,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_power",
+          "text": {
+            "fixedValue": "Magic Power"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 34,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow2",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "MagicPowerDown"
+          },
+          "x": 6,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow2",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "MagicPowerUp"
+          },
+          "x": 104,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_power_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicPowerDisplay"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "x": 41,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defense",
+          "text": {
+            "fixedValue": "Defense"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "x": 41,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_cooldown",
+          "text": {
+            "fixedValue": "Spiritual Recoil"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "x": 20,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_cooldown_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicCooldownDisplay"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "x": 41,
+          "y": 176,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow3",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "MagicCooldownDown"
+          },
+          "x": 6,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow3",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "MagicCooldownUp"
+          },
+          "x": 104,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_chooses_the_direction_the_magic",
+          "text": {
+            "fixedValue": "chooses the direction the magic will fly in relative to player"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 132,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_how_fast_the_spell_flies",
+          "text": {
+            "fixedValue": "how fast the spell flies"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 118,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_how_fast_you_can_attack",
+          "text": {
+            "fixedValue": "how fast you can attack"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay2"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 118,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_your_defensive_field_damage_and",
+          "text": {
+            "fixedValue": "your defensive field damage and bending damage"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 118,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_weapon_power",
+          "text": {
+            "fixedValue": "Weapon Power"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay2"
+          },
+          "x": 34,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_magic_damage",
+          "text": {
+            "fixedValue": "magic damage"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 118,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_how_much_defense_your_magic_prov",
+          "text": {
+            "fixedValue": "how much defense your magic provides"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 118,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_how_much_damage_your_enhanced_at",
+          "text": {
+            "fixedValue": "how much damage your enhanced attacks will provide"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay2"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 118,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_cooldown_time_before_casting_ano",
+          "text": {
+            "fixedValue": "recoil from spell (stops you from casting any spell for recoil time, also may affect regeneration speed of passive spells)"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 118,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_cooldown_time_before_casting_ano1",
+          "text": {
+            "fixedValue": "cooldown time before casting another spell"
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay2"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 118,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_magic_bending_cooldown_and_spell",
+          "text": {
+            "fixedValue": "magic bending cooldown and spell cooldown time"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 118,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_skill_cost",
+          "text": {
+            "fixedValue": "Skill Cost:"
+          },
+          "color": {
+            "value": -13434625,
+            "falpha": 0.0
+          },
+          "x": 160,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_cost_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicCostDisplay"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 223,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow4",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "CastingOffsetDown"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 174,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow4",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "CastingOffsetUp"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 286,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_casting_offset",
+          "text": {
+            "fixedValue": "Placed Magic Offset"
+          },
+          "color": {
+            "value": -16711834,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 188,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_casting_offset_display",
+          "text": {
+            "fixedValue": "",
+            "name": "CastingOffsetDisplay"
+          },
+          "color": {
+            "value": -10027162,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 223,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_decides_how_far_out_your_placed",
+          "text": {
+            "fixedValue": "decides how far out your placed magic can be set"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 307,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow5",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "MagicSizeDown"
+          },
+          "x": 174,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow5",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "MagicSizeUp"
+          },
+          "x": 265,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_size",
+          "text": {
+            "fixedValue": "Magic Size"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 202,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bending_output",
+          "text": {
+            "fixedValue": "Bending Output"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "x": 188,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_attack_size",
+          "text": {
+            "fixedValue": "Attack Size"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay2"
+          },
+          "x": 202,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_size_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicSizeDisplay"
+          },
+          "color": {
+            "value": -256,
+            "falpha": 0.0
+          },
+          "x": 216,
+          "y": 92,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_changes_the_aoe_and_size_of_your",
+          "text": {
+            "fixedValue": "changes the aoe and size of your magic"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 286,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_changes_your_magic_bending_size",
+          "text": {
+            "fixedValue": "changes your magic bending size (right click to bend)"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 286,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_changes_your_weapon_attack_reach",
+          "text": {
+            "fixedValue": "changes your weapon attack reach and size explosion"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay2"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 286,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_shape",
+          "text": {
+            "fixedValue": "Magic Shape"
+          },
+          "color": {
+            "value": -6749953,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 202,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow6",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "MagicShapeDown"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 174,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow6",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "MagicShapeUp"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 265,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_shapeless",
+          "text": {
+            "fixedValue": "shapeless"
+          },
+          "color": {
+            "value": -6749953,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay1"
+          },
+          "x": 202,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_no_stat_changes",
+          "text": {
+            "fixedValue": "shapeless has no stat changes"
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay1"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 251,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_changes_magic_shape",
+          "text": {
+            "fixedValue": "changes magic shape"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 286,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sphere",
+          "text": {
+            "fixedValue": "sphere"
+          },
+          "color": {
+            "value": -6749953,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay2"
+          },
+          "x": 209,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_arrow",
+          "text": {
+            "fixedValue": "arrow"
+          },
+          "color": {
+            "value": -6749953,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay3"
+          },
+          "x": 209,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_beam",
+          "text": {
+            "fixedValue": "beam"
+          },
+          "color": {
+            "value": -6749953,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay4"
+          },
+          "x": 216,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_helix",
+          "text": {
+            "fixedValue": "helix"
+          },
+          "color": {
+            "value": -6749953,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay5"
+          },
+          "x": 216,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sword",
+          "text": {
+            "fixedValue": "sword"
+          },
+          "color": {
+            "value": -6749953,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay6"
+          },
+          "x": 209,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_size_40_damage_10_spee",
+          "text": {
+            "fixedValue": "(size +40%)  (damage -10%) (speed -10%)"
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay2"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 251,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_speed_30_damage_10_size",
+          "text": {
+            "fixedValue": "(speed +30%) (damage +10%) (piercing +1) (size -25%)"
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay3"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 251,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_speed_60_size_40",
+          "text": {
+            "fixedValue": "(speed +60%) (size -40%)"
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay4"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 251,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_speed_25_size_25_damage",
+          "text": {
+            "fixedValue": "(speed +25%) (size +25%) (damage -15%)"
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 251,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_damage_40_piercing_1_spe",
+          "text": {
+            "fixedValue": "(damage +40%) (piercing +1) (speed +10%) (size -20%)"
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay6"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 251,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 293,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 258,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty2",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 293,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty3",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 314,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty4",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 125,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty5",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 125,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty6",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 125,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty7",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 139,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow7",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "MagicPiercingDown"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 174,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow7",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "MagicPiercingUp"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 265,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_piercing",
+          "text": {
+            "fixedValue": "Piercing"
+          },
+          "color": {
+            "value": -16711732,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 209,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_piercing_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicPiercingDisplay"
+          },
+          "color": {
+            "value": -16724839,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 223,
+          "y": 176,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_how_many_times_magic_can_pierce",
+          "text": {
+            "fixedValue": "how many times magic can pierce through enemies"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 286,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty8",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 293,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rightarrow",
+          "image": "rightarrow.png",
+          "hoveredImage": "rightarrowselect.png",
+          "onClick": {
+            "name": "Projectile2Button"
+          },
+          "x": 377,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_boost_speed",
+          "text": {
+            "fixedValue": "Boost Speed"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay4"
+          },
+          "x": 27,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_boost_amount",
+          "text": {
+            "fixedValue": "Boost Amount"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay4"
+          },
+          "x": 34,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_how_powerful_your_boost_is",
+          "text": {
+            "fixedValue": "how powerful your boost is (will not work if exceeds boost amount"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay4"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 118,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_how_much_stamina_your_boost_bar",
+          "text": {
+            "fixedValue": "how much stamina your boost bar has"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay4"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 118,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_how_fast_boost_regenerates_lowe",
+          "text": {
+            "fixedValue": "how fast boost regenerates (lower the number the faster)"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay4"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 118,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Spell Name",
+          "name": "spellname",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_name",
+          "text": {
+            "fixedValue": "Spell Name"
+          },
+          "color": {
+            "value": -6750004,
+            "falpha": 0.0
+          },
+          "x": 188,
+          "y": 201,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 14,
+      "sy": 14,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

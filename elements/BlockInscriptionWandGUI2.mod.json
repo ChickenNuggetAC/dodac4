@@ -1,0 +1,192 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "inscriptionui.png",
+          "use1Xscale": false,
+          "x": 80,
+          "y": -11,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_keybind_1",
+          "text": "keybind 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "InscribeWandKeybind1"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 96,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_keybind_2",
+          "text": "keybind 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "InscribeWandKeybind2"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 96,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_keybind_3",
+          "text": "keybind 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "InscribeWandKeybind3"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 173,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_keybind_4",
+          "text": "keybind 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "InscribeWandKeybind4"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 173,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_keybind_5",
+          "text": "keybind 5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "InscribeWandKeybind5"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 249,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_keybind_6",
+          "text": "keybind 6",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "InscribeWandKeybind6"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 249,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_wand_direction",
+          "text": {
+            "fixedValue": "Wand Direction"
+          },
+          "color": {
+            "value": -3381760,
+            "falpha": 0.0
+          },
+          "x": 173,
+          "y": 112,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_up",
+          "text": "Up",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "WandDirectionUp"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 113,
+          "y": 128,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_player_direction",
+          "text": "Player Direction",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "WandDirectionPlayerDirection"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 154,
+          "y": 128,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_down",
+          "text": "Down",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "WandDirectionDown"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 268,
+          "y": 128,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

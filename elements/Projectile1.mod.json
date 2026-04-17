@@ -1,0 +1,865 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_type",
+          "text": {
+            "fixedValue": "Cooldown"
+          },
+          "color": {
+            "value": -16711732,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 193,
+          "y": 181,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow2",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MagicCooldownUp"
+          },
+          "x": 247,
+          "y": 184,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow1",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MagicCooldownDown"
+          },
+          "x": 147,
+          "y": 183,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow21",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "Projectile2Button"
+          },
+          "x": 387,
+          "y": 200,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow11",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "Magic1Button"
+          },
+          "x": 7,
+          "y": 200,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_speed",
+          "text": {
+            "fixedValue": "Spell Speed"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 188,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_power",
+          "text": {
+            "fixedValue": "Spell Power"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 187,
+          "y": 114,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow12",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MagicSpeedDown"
+          },
+          "x": 147,
+          "y": 51,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow22",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MagicSpeedUp"
+          },
+          "x": 247,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow13",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MagicPowerDown"
+          },
+          "x": 147,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow23",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MagicPowerUp"
+          },
+          "x": 247,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_selection_multiplier",
+          "text": {
+            "fixedValue": "Selection Multiplier"
+          },
+          "color": {
+            "value": -6750004,
+            "falpha": 0.0
+          },
+          "x": 7,
+          "y": 4,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow24",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "SelectionMultiplierUp"
+          },
+          "x": 84,
+          "y": 15,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow14",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "SelectionMultiplierDown"
+          },
+          "x": -3,
+          "y": 14,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_selection_multiplier_number",
+          "text": {
+            "fixedValue": "",
+            "name": "SelectionMultiplierNumberDisplay"
+          },
+          "color": {
+            "value": -6750004,
+            "falpha": 0.0
+          },
+          "x": 50,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_power_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicPowerDisplay"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "x": 211,
+          "y": 130,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_speed_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicSpeedDisplay"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "x": 211,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_cooldown_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicCooldownDisplay"
+          },
+          "color": {
+            "value": -16711732,
+            "falpha": 0.0
+          },
+          "x": 211,
+          "y": 195,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_reset",
+          "text": "Reset?",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "SelectionMultiplierReset"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 46,
+          "y": 45,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_attack_speed",
+          "text": {
+            "fixedValue": "Attack Range"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay2"
+          },
+          "x": 185,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_weapon_power",
+          "text": {
+            "fixedValue": "Weapon Power"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay2"
+          },
+          "x": 183,
+          "y": 114,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_attack_cooldown_speed",
+          "text": {
+            "fixedValue": "Attack Cooldown Speed"
+          },
+          "color": {
+            "value": -16711732,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay2"
+          },
+          "x": 160,
+          "y": 175,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_defense",
+          "text": {
+            "fixedValue": "Defense"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "x": 198,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empower",
+          "text": {
+            "fixedValue": "Empower"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "x": 196,
+          "y": 114,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_bending_cooldown",
+          "text": {
+            "fixedValue": "Magic Bending Cooldown"
+          },
+          "color": {
+            "value": -16711732,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "x": 157,
+          "y": 175,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_movement_speed",
+          "text": {
+            "fixedValue": "Movement Speed"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay4"
+          },
+          "x": 178,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_movement_force",
+          "text": {
+            "fixedValue": "Movement Force"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay4"
+          },
+          "x": 177,
+          "y": 114,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_movement_cooldown",
+          "text": {
+            "fixedValue": "Movement Cooldown"
+          },
+          "color": {
+            "value": -16711732,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay4"
+          },
+          "x": 170,
+          "y": 175,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_movement",
+          "text": {
+            "fixedValue": "Magic Movement"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 177,
+          "y": 49,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_can_move_up_or_down_depending_on",
+          "text": {
+            "fixedValue": "can move up or down depending on negative or positive"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 262,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_has_different_effects_depnding_o",
+          "text": {
+            "fixedValue": "has different effects depnding on the magic type"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay4"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 260,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_allows_you_to_bend_the_magic_out",
+          "text": {
+            "fixedValue": "allows you to bend the magic outward from your body without casting"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 274,
+          "y": 176,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_power",
+          "text": {
+            "fixedValue": "Spell Power"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 185,
+          "y": 114,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cooldown",
+          "text": {
+            "fixedValue": "Cooldown"
+          },
+          "color": {
+            "value": -16711732,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 193,
+          "y": 181,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "x": 277,
+          "y": 178,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay4"
+          },
+          "x": 262,
+          "y": 47,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty2",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 261,
+          "y": 45,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_cost_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicCostDisplay"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 331,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_skill_cost",
+          "text": {
+            "fixedValue": "Skill Cost:"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 273,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_direction",
+          "text": {
+            "fixedValue": "Magic Direction"
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "x": 36,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow25",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MagicDirectionUp"
+          },
+          "x": 100,
+          "y": 92,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow15",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MagicDirectionDown"
+          },
+          "x": 19,
+          "y": 92,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_forward",
+          "text": {
+            "fixedValue": "Forward"
+          },
+          "color": {
+            "value": -13395712,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplay1"
+          },
+          "x": 58,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_backward",
+          "text": {
+            "fixedValue": "Backward"
+          },
+          "color": {
+            "value": -16738048,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplayBackward"
+          },
+          "x": 55,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_left",
+          "text": {
+            "fixedValue": "Left"
+          },
+          "color": {
+            "value": -16738048,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplayLeft"
+          },
+          "x": 67,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_right",
+          "text": {
+            "fixedValue": "Right"
+          },
+          "color": {
+            "value": -16738048,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplayRight"
+          },
+          "x": 62,
+          "y": 101,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_up",
+          "text": {
+            "fixedValue": "Down"
+          },
+          "color": {
+            "value": -16738048,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplayUp"
+          },
+          "x": 73,
+          "y": 101,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_down",
+          "text": {
+            "fixedValue": "Up"
+          },
+          "color": {
+            "value": -16738048,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplayDown"
+          },
+          "x": 65,
+          "y": 101,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_random",
+          "text": {
+            "fixedValue": "Random"
+          },
+          "color": {
+            "value": -16738048,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicDirectionDisplayRandom"
+          },
+          "x": 61,
+          "y": 102,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 12,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,749 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow27",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "Projectile3Button"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 359,
+          "y": 200,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow16",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MagicPiercingDown"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 119,
+          "y": 183,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow26",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MagicPiercingUp"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 276,
+          "y": 184,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow25",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MagicShapeUp"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 275,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow15",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MagicShapeDown"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 119,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow21",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "Projectile3Button"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 387,
+          "y": 200,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow11",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "Projectile1Button"
+          },
+          "x": 7,
+          "y": 200,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_speed",
+          "text": {
+            "fixedValue": "Magic Size"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 190,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_power",
+          "text": {
+            "fixedValue": "Magic Shape"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 185,
+          "y": 114,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow12",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MagicSizeDown"
+          },
+          "displayCondition": {
+            "name": "Display4Off"
+          },
+          "x": 147,
+          "y": 51,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow22",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MagicSizeUp"
+          },
+          "displayCondition": {
+            "name": "Display4Off"
+          },
+          "x": 247,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow13",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MagicShapeDown"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 147,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow23",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MagicShapeUp"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 247,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_selection_multiplier",
+          "text": {
+            "fixedValue": "Selection Multiplier"
+          },
+          "color": {
+            "value": -6750004,
+            "falpha": 0.0
+          },
+          "x": 7,
+          "y": 4,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow24",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "SelectionMultiplierUp"
+          },
+          "x": 84,
+          "y": 15,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow14",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "SelectionMultiplierDown"
+          },
+          "x": 0,
+          "y": 15,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_selection_multiplier_number",
+          "text": {
+            "fixedValue": "",
+            "name": "SelectionMultiplierNumberDisplay"
+          },
+          "color": {
+            "value": -6750004,
+            "falpha": 0.0
+          },
+          "x": 50,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_speed_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicSizeDisplay"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Display4Off"
+          },
+          "x": 211,
+          "y": 69,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_shapeless",
+          "text": {
+            "fixedValue": "Shapeless"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay1"
+          },
+          "x": 190,
+          "y": 127,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sphere",
+          "text": {
+            "fixedValue": "Sphere"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay2"
+          },
+          "x": 197,
+          "y": 127,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_arrow",
+          "text": {
+            "fixedValue": "arrow"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay3"
+          },
+          "x": 200,
+          "y": 126,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_beam",
+          "text": {
+            "fixedValue": "beam"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay4"
+          },
+          "x": 202,
+          "y": 127,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_helix",
+          "text": {
+            "fixedValue": "helix"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay5"
+          },
+          "x": 200,
+          "y": 127,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_piercing",
+          "text": {
+            "fixedValue": "Piercing"
+          },
+          "color": {
+            "value": -10092544,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 193,
+          "y": 178,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow2",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MagicPiercingUp"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 247,
+          "y": 184,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow1",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MagicPiercingDown"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 147,
+          "y": 183,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_piercing_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicPiercingDisplay"
+          },
+          "color": {
+            "value": -10092544,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 211,
+          "y": 193,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_reset",
+          "text": "Reset?",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "SelectionMultiplierReset"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 43,
+          "y": 45,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_attack_size",
+          "text": {
+            "fixedValue": "Attack Size"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay2"
+          },
+          "x": 184,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bending_output",
+          "text": {
+            "fixedValue": "Bending Output"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "x": 177,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_size",
+          "text": {
+            "fixedValue": "Magic Size"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 189,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_shape",
+          "text": {
+            "fixedValue": "Magic Shape"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 185,
+          "y": 114,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_piercing1",
+          "text": {
+            "fixedValue": "Piercing"
+          },
+          "color": {
+            "value": -10092544,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 193,
+          "y": 178,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_piercing_display1",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicPiercingDisplay"
+          },
+          "color": {
+            "value": -10092544,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 211,
+          "y": 193,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_cost_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicCostDisplay"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 331,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_skill_cost",
+          "text": {
+            "fixedValue": "Skill Cost:"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 273,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_placed_casting_offset",
+          "text": {
+            "fixedValue": "Placed Casting Offset"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 27,
+          "y": 75,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow28",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "CastingOffsetUp"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 120,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow17",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "CastingOffsetDown"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 7,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_casting_offset_display",
+          "text": {
+            "fixedValue": "",
+            "name": "CastingOffsetDisplay"
+          },
+          "color": {
+            "value": -3381760,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 72,
+          "y": 93,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sword",
+          "text": {
+            "fixedValue": "sword"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicShapeDisplay6"
+          },
+          "x": 198,
+          "y": 127,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 12,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

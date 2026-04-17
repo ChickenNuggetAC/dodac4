@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "dreams_of_divinity:block/spiritforge",
+    "particle": "dreams_of_divinity:block/spiritforge"
+  },
+  "render_type": "cutout"
+}

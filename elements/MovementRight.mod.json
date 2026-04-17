@@ -1,0 +1,15 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "D",
+    "keyBindingName": "Movement Right",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "MovementRightOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "MovementForwardOnKeyReleased"
+    }
+  }
+}

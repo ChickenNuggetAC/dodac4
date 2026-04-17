@@ -1,0 +1,189 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_type",
+          "text": {
+            "fixedValue": "Spell Type"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 185,
+          "y": 94,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow2",
+          "image": "rightarrow.png",
+          "hoveredImage": "rightarrowselect.png",
+          "onClick": {
+            "name": "SpellTypeUp"
+          },
+          "x": 250,
+          "y": 104,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow1",
+          "image": "leftarrowselect.png",
+          "hoveredImage": "leftarrow.png",
+          "onClick": {
+            "name": "SpellTypeDown"
+          },
+          "x": 141,
+          "y": 104,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ranged",
+          "text": {
+            "fixedValue": "Ranged"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 198,
+          "y": 114,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_weapon",
+          "text": {
+            "fixedValue": "weapon enhance"
+          },
+          "color": {
+            "value": -39424,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay2"
+          },
+          "x": 178,
+          "y": 114,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_body_enhance",
+          "text": {
+            "fixedValue": "body enhance"
+          },
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay3"
+          },
+          "x": 184,
+          "y": 114,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_movement_enhance",
+          "text": {
+            "fixedValue": "movement enhance"
+          },
+          "color": {
+            "value": -13369600,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay4"
+          },
+          "x": 170,
+          "y": 113,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow21",
+          "image": "rightarrow.png",
+          "hoveredImage": "rightarrowselect.png",
+          "onClick": {
+            "name": "Next1Button"
+          },
+          "x": 387,
+          "y": 200,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow11",
+          "image": "leftarrowselect.png",
+          "hoveredImage": "leftarrow.png",
+          "onClick": {
+            "name": "MagicSelectButton"
+          },
+          "x": 7,
+          "y": 200,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_placed_magic",
+          "text": {
+            "fixedValue": "Placed Magic"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay5"
+          },
+          "x": 181,
+          "y": 114,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "dreams_of_divinity:custom/armorcircle",
+  "textures": {
+    "missing": "minecraft:block/amethyst_block",
+    "particle": "minecraft:item/amethyst_shard"
+  }
+}

@@ -1,0 +1,694 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow11",
+          "image": "leftarrowselect.png",
+          "hoveredImage": "leftarrow.png",
+          "onClick": {
+            "name": "Next1Button"
+          },
+          "x": 7,
+          "y": 200,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_selection_multiplier",
+          "text": {
+            "fixedValue": "selection multiplier"
+          },
+          "color": {
+            "value": -13434778,
+            "falpha": 0.0
+          },
+          "x": 6,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "SelectionMultiplier",
+          "width": 120,
+          "height": 20,
+          "x": 6,
+          "y": 17,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magicdirection",
+          "text": {
+            "fixedValue": "Skill Follow Type"
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 27,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "MagicFollowOrientationDisplayDown"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 6,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "MagicFollowOrientationDisplayUp"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 118,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_forward",
+          "text": {
+            "fixedValue": "base movement"
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicFollowOrientationDisplay1"
+          },
+          "x": 41,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_backward",
+          "text": {
+            "fixedValue": "magic follows player"
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicFollowOrientationDisplay2"
+          },
+          "x": 20,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_left",
+          "text": {
+            "fixedValue": "player follows magic"
+          },
+          "color": {
+            "value": -16751104,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicFollowOrientationDisplay3"
+          },
+          "x": 20,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow1",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "MagicDurationDown"
+          },
+          "x": 6,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow1",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "MagicDurationUp"
+          },
+          "x": 104,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_speed_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicDurationDisplay"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "x": 55,
+          "y": 92,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_movement",
+          "text": {
+            "fixedValue": "Magic Duration"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 27,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_power",
+          "text": {
+            "fixedValue": "Blood Lust"
+          },
+          "color": {
+            "value": -6750208,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 34,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow2",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "BloodlustDown"
+          },
+          "x": 6,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow2",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "BloodlustUp"
+          },
+          "x": 104,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_power_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicTrackingDisplay"
+          },
+          "color": {
+            "value": -6750208,
+            "falpha": 0.0
+          },
+          "x": 55,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_cooldown",
+          "text": {
+            "fixedValue": "Multi Cast"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "x": 41,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_cooldown_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MultiCastDisplay"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "x": 55,
+          "y": 176,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow3",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "MultiCastDown"
+          },
+          "x": 6,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow3",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "MultiCastUp"
+          },
+          "x": 104,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_chooses_the_direction_the_magic",
+          "text": {
+            "fixedValue": "allows you to change how the skill and player interact"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 132,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_how_fast_the_spell_flies",
+          "text": {
+            "fixedValue": "how long the spell will live for"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 125,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_how_much_damage_your_enhanced_at",
+          "text": {
+            "fixedValue": "spell can lock onto enemies within the set range"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 125,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_cooldown_time_before_casting_ano1",
+          "text": {
+            "fixedValue": "how many spells you can summon"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 125,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_skill_cost",
+          "text": {
+            "fixedValue": "Skill Cost:"
+          },
+          "color": {
+            "value": -13434625,
+            "falpha": 0.0
+          },
+          "x": 160,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_cost_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicCostDisplay"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 223,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallleftarrow4",
+          "image": "asmallleftarrow.png",
+          "hoveredImage": "asmallleftarrowselected.png",
+          "onClick": {
+            "name": "MultiCastAreaCoverageDown"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 174,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_asmallrightarrow4",
+          "image": "asmallrightarrow.png",
+          "hoveredImage": "asmallrightarrowselected.png",
+          "onClick": {
+            "name": "MultiCastAreaCoverageUp"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 328,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_casting_offset",
+          "text": {
+            "fixedValue": "Multi Cast Area Coverage"
+          },
+          "color": {
+            "value": -16711834,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 195,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_casting_offset_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MultiCastAreaCoverageDisplay"
+          },
+          "color": {
+            "value": -10027162,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 237,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_decides_how_far_out_your_placed",
+          "text": {
+            "fixedValue": "how much area your multicasted spells will be spread out by"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 342,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty3",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 349,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty4",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 162,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty5",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty6",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 78,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty7",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1and5"
+          },
+          "x": 139,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_guided_magic",
+          "text": {
+            "fixedValue": "Guided Magic"
+          },
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "x": 230,
+          "y": 85,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_on",
+          "text": "On",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GuidedMagicOn"
+          },
+          "displayCondition": {
+            "name": "GuidedMagicOnDisplay"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 244,
+          "y": 99,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_off",
+          "text": "Off",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GuidedMagicOff"
+          },
+          "displayCondition": {
+            "name": "GuidedMagicOffDisplay"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 244,
+          "y": 99,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 14,
+      "sy": 14,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"rotate": {
+			"loop": true,
+			"bones": {
+				"sword2": {
+					"scale": {
+						"vector": [0.6, 0.2, 2.7]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

@@ -1,0 +1,9 @@
+{
+  "forge_marker": 1,
+  "parent": "neoforge:item/default",
+  "loader": "neoforge:obj",
+  "model": "dreams_of_divinity:models/item/sphericalitem.obj",
+  "textures": {
+    "particle": "minecraft:item/amethyst_shard"
+  }
+}

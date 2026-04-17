@@ -1,0 +1,250 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_party_leader",
+          "text": {
+            "fixedValue": "Party leaders:"
+          },
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "x": 6,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_party_rank_leaders_display",
+          "text": {
+            "fixedValue": "",
+            "name": "PartyRankLeadersDisplay"
+          },
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_party_generals",
+          "text": {
+            "fixedValue": "Party Generals:"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "x": 6,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_party_rank_general",
+          "text": {
+            "fixedValue": "",
+            "name": "PartyRankGeneral"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "x": 96,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_party_officers",
+          "text": {
+            "fixedValue": "Party Officers:"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 6,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_party_rank_officer",
+          "text": {
+            "fixedValue": "",
+            "name": "PartyRankOfficer"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 96,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_party_memebers",
+          "text": {
+            "fixedValue": "Party Members:"
+          },
+          "color": {
+            "value": -13369600,
+            "falpha": 0.0
+          },
+          "x": 6,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_party_rank_member",
+          "text": {
+            "fixedValue": "",
+            "name": "PartyRankMember"
+          },
+          "color": {
+            "value": -13369600,
+            "falpha": 0.0
+          },
+          "x": 87,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "partypromote",
+          "width": 120,
+          "height": 20,
+          "x": 42,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_promote_member",
+          "text": "promote member",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PromoteMember"
+          },
+          "width": 98,
+          "height": 20,
+          "x": 168,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_kick_member",
+          "text": "kick member",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "KickMember"
+          },
+          "width": 82,
+          "height": 20,
+          "x": 168,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "kickmember",
+          "width": 120,
+          "height": 20,
+          "x": 42,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "demotemember",
+          "width": 120,
+          "height": 20,
+          "x": 42,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_demote_member",
+          "text": "demote member",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "DemoteMember"
+          },
+          "width": 93,
+          "height": 20,
+          "x": 168,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "partyname?",
+          "name": "partyname",
+          "width": 120,
+          "height": 20,
+          "x": 294,
+          "y": 8,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

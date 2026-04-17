@@ -1,0 +1,452 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_type",
+          "text": {
+            "fixedValue": "Bloodlust"
+          },
+          "color": {
+            "value": -10092544,
+            "falpha": 0.0
+          },
+          "x": 192,
+          "y": 181,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow2",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "BloodlustUp"
+          },
+          "x": 247,
+          "y": 184,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow1",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "BloodlustDown"
+          },
+          "x": 147,
+          "y": 183,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow21",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "Projectile4Button"
+          },
+          "x": 387,
+          "y": 200,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow11",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "Projectile2Button"
+          },
+          "x": 7,
+          "y": 200,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_speed",
+          "text": {
+            "fixedValue": "Skill Follow Orientation"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 155,
+          "y": 42,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spell_power",
+          "text": {
+            "fixedValue": "Skill Duration"
+          },
+          "color": {
+            "value": -16711732,
+            "falpha": 0.0
+          },
+          "x": 177,
+          "y": 109,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow12",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MagicFollowOrientationDisplayDown"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 121,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow22",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MagicFollowOrientationDisplayUp"
+          },
+          "displayCondition": {
+            "name": "SpellTypeDisplay1"
+          },
+          "x": 281,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow13",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "MagicDurationDown"
+          },
+          "x": 147,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow23",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "MagicDurationUp"
+          },
+          "x": 247,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_selection_multiplier",
+          "text": {
+            "fixedValue": "Selection Multiplier"
+          },
+          "color": {
+            "value": -6750004,
+            "falpha": 0.0
+          },
+          "x": 7,
+          "y": 4,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow24",
+          "image": "arrow2.png",
+          "hoveredImage": "arrow22.png",
+          "onClick": {
+            "name": "SelectionMultiplierUp"
+          },
+          "x": 84,
+          "y": 15,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow14",
+          "image": "arrow1.png",
+          "hoveredImage": "arrow12.png",
+          "onClick": {
+            "name": "SelectionMultiplierDown"
+          },
+          "x": 0,
+          "y": 15,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_selection_multiplier_number",
+          "text": {
+            "fixedValue": "",
+            "name": "SelectionMultiplierNumberDisplay"
+          },
+          "color": {
+            "value": -6750004,
+            "falpha": 0.0
+          },
+          "x": 50,
+          "y": 25,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_power_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicDurationDisplay"
+          },
+          "color": {
+            "value": -16711732,
+            "falpha": 0.0
+          },
+          "x": 211,
+          "y": 130,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_cooldown_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicTrackingDisplay"
+          },
+          "color": {
+            "value": -10092544,
+            "falpha": 0.0
+          },
+          "x": 211,
+          "y": 195,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_none",
+          "text": {
+            "fixedValue": "None"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicFollowOrientationDisplay1"
+          },
+          "x": 207,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_follow_player",
+          "text": {
+            "fixedValue": "Magic Follows Player"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicFollowOrientationDisplay2"
+          },
+          "x": 166,
+          "y": 61,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_player_follows_magic",
+          "text": {
+            "fixedValue": "Player Follows Magic"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "MagicFollowOrientationDisplay3"
+          },
+          "x": 166,
+          "y": 61,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_reset",
+          "text": "Reset?",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "SelectionMultiplierReset"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 45,
+          "y": 45,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_locks_onto_nearest_enemies_withi",
+          "text": {
+            "fixedValue": "Locks onto nearest enemies within the bloodlust set range"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 275,
+          "y": 173,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "x": 278,
+          "y": 176,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_how_long_the_skill_lasts",
+          "text": {
+            "fixedValue": "How long the skill lasts"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 271,
+          "y": 104,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "x": 275,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_cost_display",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicCostDisplay"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 331,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_skill_cost",
+          "text": {
+            "fixedValue": "Skill Cost:"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 273,
+          "y": 8,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 12,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

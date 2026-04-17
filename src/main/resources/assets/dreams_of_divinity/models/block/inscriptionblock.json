@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dreams_of_divinity:block/inscription",
+    "up": "dreams_of_divinity:block/inscription",
+    "north": "dreams_of_divinity:block/inscription",
+    "east": "dreams_of_divinity:block/inscription",
+    "south": "dreams_of_divinity:block/inscription",
+    "west": "dreams_of_divinity:block/inscription",
+    "particle": "dreams_of_divinity:block/inscription"
+  },
+  "render_type": "translucent"
+}

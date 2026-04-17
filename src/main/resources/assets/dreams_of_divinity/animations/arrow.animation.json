@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"rotate": {
+			"animation_length": 1,
+			"bones": {
+				"sword2": {
+					"position": {
+						"vector": [0, 0, 2]
+					},
+					"scale": {
+						"vector": [0.3, 0.3, 2.7]
+					}
+				},
+				"sword3": {
+					"position": {
+						"vector": [0, 0, -3]
+					},
+					"scale": {
+						"vector": [0.3, 0.3, 2.8]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

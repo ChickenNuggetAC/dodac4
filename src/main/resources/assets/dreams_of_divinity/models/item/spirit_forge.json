@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dreams_of_divinity:item/spiritforgeitem"
+  },
+  "render_type": "translucent"
+}

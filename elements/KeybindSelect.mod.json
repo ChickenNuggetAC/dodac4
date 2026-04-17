@@ -1,0 +1,194 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_spell_1",
+          "text": "Spell 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Keybind1"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 77,
+          "y": 42,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_spell_2",
+          "text": "Spell 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Keybind2"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 184,
+          "y": 42,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_spell_3",
+          "text": "Spell 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Keybind3"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 290,
+          "y": 42,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_spell_4",
+          "text": "Spell 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Keybind4"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 77,
+          "y": 110,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_spell_5",
+          "text": "Spell 5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Keybind5"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 184,
+          "y": 110,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_spell_6",
+          "text": "Spell 6",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Keybind6"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 290,
+          "y": 110,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_accept_party_invite",
+          "text": "ACCEPT PARTY INVITE!?",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "PartyAccept"
+          },
+          "displayCondition": {
+            "name": "Partyinvitedisplay"
+          },
+          "width": 134,
+          "height": 20,
+          "x": 5,
+          "y": 176,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_decline_party_invite",
+          "text": "DECLINE PARTY INVITE!?",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "PartyDecline"
+          },
+          "displayCondition": {
+            "name": "Partyinvitedisplay"
+          },
+          "width": 140,
+          "height": 20,
+          "x": 6,
+          "y": 204,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_leave_party",
+          "text": "Leave Party?",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "LeaveParty"
+          },
+          "displayCondition": {
+            "name": "PartyLeaveDisplay"
+          },
+          "width": 98,
+          "height": 20,
+          "x": 337,
+          "y": 203,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_party_settings",
+          "text": "Party Settings",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenPartySettings"
+          },
+          "displayCondition": {
+            "name": "PartyLeaveDisplay"
+          },
+          "width": 98,
+          "height": 20,
+          "x": 165,
+          "y": 193,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 71,
+      "sy": 68,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

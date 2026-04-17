@@ -1,0 +1,38 @@
+{
+  "firesummon": {
+    "subtitle": "subtitles.firesummon",
+    "sounds": [
+      {
+        "name": "dreams_of_divinity:firesummon",
+        "stream": false
+      }
+    ]
+  },
+  "fireexplode": {
+    "subtitle": "subtitles.fireexplode",
+    "sounds": [
+      {
+        "name": "dreams_of_divinity:fireexplode",
+        "stream": false
+      }
+    ]
+  },
+  "firecrackle": {
+    "subtitle": "subtitles.firecrackle",
+    "sounds": [
+      {
+        "name": "dreams_of_divinity:firecrackle",
+        "stream": false
+      }
+    ]
+  },
+  "magiccircle": {
+    "subtitle": "subtitles.magiccircle",
+    "sounds": [
+      {
+        "name": "dreams_of_divinity:magiccircle",
+        "stream": false
+      }
+    ]
+  }
+}

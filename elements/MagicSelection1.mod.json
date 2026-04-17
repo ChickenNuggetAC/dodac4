@@ -1,0 +1,190 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "Entityproviderplayer"
+          },
+          "scale": 60,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 203,
+          "y": 166,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_water",
+          "image": "water.png",
+          "hoveredImage": "waterselect.png",
+          "onClick": {
+            "name": "WaterClicked"
+          },
+          "displayCondition": {
+            "name": "WaterUnlocked"
+          },
+          "x": 24,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_flame",
+          "image": "flame.png",
+          "hoveredImage": "fireselect.png",
+          "onClick": {
+            "name": "FireClicked"
+          },
+          "displayCondition": {
+            "name": "FireUnlocked"
+          },
+          "x": 24,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "flamelocked.png",
+          "use1Xscale": false,
+          "x": 24,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "waterlocked.png",
+          "use1Xscale": false,
+          "x": 24,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow2",
+          "image": "rightarrow.png",
+          "hoveredImage": "rightarrowselect.png",
+          "onClick": {
+            "name": "Magic1Button"
+          },
+          "x": 380,
+          "y": 193,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow1",
+          "image": "leftarrowselect.png",
+          "hoveredImage": "leftarrow.png",
+          "onClick": {
+            "name": "KeybindSelectButton"
+          },
+          "x": 14,
+          "y": 193,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fire_magic",
+          "text": {
+            "fixedValue": "fire magic"
+          },
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "x": 42,
+          "y": 17,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "WaterSelected"
+          },
+          "x": 105,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_water_magic",
+          "text": {
+            "fixedValue": "water magic"
+          },
+          "color": {
+            "value": -16777012,
+            "falpha": 0.0
+          },
+          "x": 42,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "FireSelected"
+          },
+          "x": 96,
+          "y": 17,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_empty",
+          "text": {
+            "fixedValue": "(20% speed) (50% power) (30% size)"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 15,
+          "y": 8,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

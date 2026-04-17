@@ -1,0 +1,144 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "spiritstonefusescree.png",
+          "use1Xscale": false,
+          "x": 78,
+          "y": -17,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_keybind_1",
+          "text": "Keybind 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "InscribeWandKeybind1"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 114,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_keybind_2",
+          "text": "Keybind 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "InscribeWandKeybind2"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 240,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_keybind_3",
+          "text": "Keybind 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "InscribeWandKeybind3"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 105,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_keybind_4",
+          "text": "Keybind 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "InscribeWandKeybind4"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 249,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_keybind_5",
+          "text": "Keybind 5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "InscribeWandKeybind5"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 114,
+          "y": 179,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_keybind_6",
+          "text": "Keybind 6",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "InscribeWandKeybind6"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 240,
+          "y": 179,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fuse_to_spirit_stone",
+          "text": {
+            "fixedValue": "Fuse To Spirit Stone"
+          },
+          "color": {
+            "value": -16449281,
+            "falpha": 0.0
+          },
+          "x": 159,
+          "y": 17,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

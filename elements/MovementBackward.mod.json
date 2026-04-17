@@ -1,0 +1,15 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "S",
+    "keyBindingName": "Movement Backward",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "MovementBackwardOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "MovementForwardOnKeyReleased"
+    }
+  }
+}

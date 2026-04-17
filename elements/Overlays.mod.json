@@ -1,0 +1,453 @@
+{
+  "_fv": 79,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "manabarempty.png",
+          "use1Xscale": true,
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 7,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manaregenleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SpiritAmountDisplay1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 7,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manaregenmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SpiritAmountDisplay2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 15,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manaregenmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SpiritAmountDisplay3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 23,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manaregenmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SpiritAmountDisplay4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 31,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manaregenmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SpiritAmountDisplay5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 39,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manaregenmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SpiritAmountDisplay6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 47,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manaregenmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SpiritAmountDisplay7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 55,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manaregenmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SpiritAmountDisplay8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 63,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manaregenmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SpiritAmountDisplay9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 71,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "manaregenright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SpiritAmountDisplay10"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 79,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spiritual_power",
+          "text": {
+            "fixedValue": "Spiritual Power"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 15,
+          "y": 204,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_spiritual_power_display",
+          "text": {
+            "fixedValue": "",
+            "name": "SpiritualPowerDisplay"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 8,
+          "y": 222,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarempty.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "Staminabardisplay"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarleft.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StaminaDisplay1"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StaminaDisplay2"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 20,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StaminaDisplay3"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 28,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StaminaDisplay4"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 36,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StaminaDisplay5"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 44,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StaminaDisplay6"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 52,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StaminaDisplay7"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 60,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StaminaDisplay8"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 68,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarmiddle.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StaminaDisplay9"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 76,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staminabarright.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "StaminaDisplay10"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 84,
+          "y": 180,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_stamina",
+          "text": {
+            "fixedValue": "Stamina"
+          },
+          "color": {
+            "value": -10092340,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Staminabardisplay"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 19,
+          "y": 171,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_stamina_display",
+          "text": {
+            "fixedValue": "",
+            "name": "StaminaDisplay"
+          },
+          "color": {
+            "value": -10092340,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Staminabardisplay"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 12,
+          "y": 188,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_auto_sprint_on",
+          "text": {
+            "fixedValue": "Auto Sprint On"
+          },
+          "color": {
+            "value": -205,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AutoSprintDisplay"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 2,
+          "y": 2,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "notenough.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "NotEnoughManaDisplay"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 7,
+          "y": 213,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_not_enough_power",
+          "text": {
+            "fixedValue": "NOT ENOUGH POWER"
+          },
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "NotEnoughManaDisplay"
+          },
+          "anchorPoint": "BOTTOM_LEFT",
+          "x": 89,
+          "y": 193,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

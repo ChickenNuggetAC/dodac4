@@ -1,0 +1,15 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "A",
+    "keyBindingName": "Movement Left",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "MovementLeftOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "MovementForwardOnKeyReleased"
+    }
+  }
+}
