@@ -330,5 +330,6 @@
   "gui.dreams_of_divinity.spirit_forge_gui.label_empty1": "\u003d",
   "gui.dreams_of_divinity.spirit_forge_gui.label_empty": "+",
   "gui.dreams_of_divinity.spirit_forge_gui.button_fuse": "Fuse",
-  "gui.dreams_of_divinity.overlays.label_magic_selected": "Magic Selected:"
+  "gui.dreams_of_divinity.overlays.label_magic_selected": "Magic Selected:",
+  "effect.dreams_of_divinity.wet": "Wet"
 }

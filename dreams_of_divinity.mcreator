@@ -6672,7 +6672,7 @@
       "name": "UnlockPoints",
       "type": "number",
       "scope": "player_persistent",
-      "value": "1.0"
+      "value": "10.0"
     },
     {
       "name": "spell",
@@ -7903,10 +7903,11 @@
       "gui.dreams_of_divinity.spirit_stone_gui.button_keybind_5": "Keybind 5",
       "block.dreams_of_divinity.spirit_forge": "Spirit Forge",
       "item.dreams_of_divinity.spirit_fusion_stone": "Spirit Fusion Stone",
-      "gui.dreams_of_divinity.spirit_forge_gui.label_empty1": "=",
+      "gui.dreams_of_divinity.spirit_forge_gui.label_empty1": "\u003d",
       "gui.dreams_of_divinity.spirit_forge_gui.label_empty": "+",
       "gui.dreams_of_divinity.spirit_forge_gui.button_fuse": "Fuse",
-      "gui.dreams_of_divinity.overlays.label_magic_selected": "Magic Selected:"
+      "gui.dreams_of_divinity.overlays.label_magic_selected": "Magic Selected:",
+      "effect.dreams_of_divinity.wet": "Wet"
     }
   },
   "metadata": {

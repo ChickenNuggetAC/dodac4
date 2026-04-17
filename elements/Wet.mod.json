@@ -3,10 +3,13 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Wet",
-    "icon": "water2",
+    "icon": "water",
     "color": {
       "value": -11176961,
       "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
     },
     "isInstant": false,
     "mobEffectCategory": "HARMFUL",
