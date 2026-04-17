@@ -7565,6 +7565,30 @@
       ],
       "category": "player",
       "subtitle": "magic circle vibrates"
+    },
+    {
+      "name": "watersummon",
+      "files": [
+        "firesummon"
+      ],
+      "category": "player",
+      "subtitle": "water summon"
+    },
+    {
+      "name": "waterflow",
+      "files": [
+        "firecrackle"
+      ],
+      "category": "player",
+      "subtitle": "water flow"
+    },
+    {
+      "name": "waterburst",
+      "files": [
+        "fireexplode"
+      ],
+      "category": "player",
+      "subtitle": "water burst"
     }
   ],
   "tag_elements": {
