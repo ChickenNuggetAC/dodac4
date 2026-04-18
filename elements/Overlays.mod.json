@@ -438,59 +438,6 @@
           "y": 193,
           "locked": false
         }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_magic_selected",
-          "text": {
-            "fixedValue": "Magic Selected:"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "anchorPoint": "BOTTOM_LEFT",
-          "x": 8,
-          "y": 150,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_magic_selected_display",
-          "text": {
-            "fixedValue": "",
-            "name": "MagicSelectedDisplay"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "anchorPoint": "BOTTOM_LEFT",
-          "x": 78,
-          "y": 150,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_magic_stats_bottom_display",
-          "text": {
-            "fixedValue": "",
-            "name": "MagicStatsBottomDisplay"
-          },
-          "color": {
-            "value": -3355444,
-            "falpha": 0.0
-          },
-          "anchorPoint": "BOTTOM_LEFT",
-          "x": 8,
-          "y": 160,
-          "locked": false
-        }
       }
     ],
     "baseTexture": "",
