@@ -9,6 +9,11 @@ public class MagicSelectedDisplayProcedure {
 		if (entity == null)
 
 			return "None";
+		boolean fire = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).fire;
+		boolean water = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).water;
+=======
+
+			return "None";
 		double selectedSpell = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).spell;
 		boolean fire = false;
 		boolean water = false;
@@ -31,6 +36,7 @@ public class MagicSelectedDisplayProcedure {
 			fire = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).fire6;
 			water = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).water6;
 		}
+
 		if (fire && water) {
 			return "Steam Magic";
 		}
@@ -38,6 +44,8 @@ public class MagicSelectedDisplayProcedure {
 			return "Fire Magic";
 		}
 		if (water) {
+
+=======
 
 			return "";
 		if (entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).fire == true) {
@@ -48,6 +56,7 @@ public class MagicSelectedDisplayProcedure {
 		}
 		if (entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).water == true) {
 
+
 			return "Water Magic";
 		}
 		return "None";
@@ -55,5 +64,9 @@ public class MagicSelectedDisplayProcedure {
 
 }
 =======
+
 }
+=======
+}
+
 
