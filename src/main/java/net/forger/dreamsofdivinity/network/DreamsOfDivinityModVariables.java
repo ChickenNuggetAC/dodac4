@@ -299,7 +299,7 @@ public class DreamsOfDivinityModVariables {
 		public double MagicMastery = 0;
 		public boolean firemagic = false;
 		public boolean watermagic = false;
-		public double UnlockPoints = 1.0;
+		public double UnlockPoints = 10.0;
 		public double spell = 0;
 		public double Piercing = 0;
 		public double Piercing1 = 0;

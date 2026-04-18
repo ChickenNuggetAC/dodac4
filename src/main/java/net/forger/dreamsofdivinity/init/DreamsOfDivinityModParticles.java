@@ -8,6 +8,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.forger.dreamsofdivinity.client.particle.WaterMagicParticle;
 import net.forger.dreamsofdivinity.client.particle.SmokeParticle;
 import net.forger.dreamsofdivinity.client.particle.WaterMagicParticle;
 import net.forger.dreamsofdivinity.client.particle.Smoke2Particle;

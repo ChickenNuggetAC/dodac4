@@ -7,6 +7,7 @@ import net.forger.dreamsofdivinity.network.DreamsOfDivinityModVariables;
 public class MagicSelectedDisplayProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
+
 			return "None";
 		double selectedSpell = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).spell;
 		boolean fire = false;
@@ -37,8 +38,22 @@ public class MagicSelectedDisplayProcedure {
 			return "Fire Magic";
 		}
 		if (water) {
+
+			return "";
+		if (entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).fire == true) {
+			if (entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).water == true) {
+				return "Steam Magic";
+			}
+			return "Fire Magic";
+		}
+		if (entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).water == true) {
+
 			return "Water Magic";
 		}
 		return "None";
 	}
+
 }
+=======
+}
+

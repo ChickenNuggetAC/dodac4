@@ -39,6 +39,8 @@ import net.forger.dreamsofdivinity.procedures.SpiritAmountDisplay2Procedure;
 import net.forger.dreamsofdivinity.procedures.SpiritAmountDisplay1Procedure;
 import net.forger.dreamsofdivinity.procedures.SpiritAmountDisplay10Procedure;
 import net.forger.dreamsofdivinity.procedures.NotEnoughManaDisplayProcedure;
+import net.forger.dreamsofdivinity.procedures.MagicStatsBottomDisplayProcedure;
+import net.forger.dreamsofdivinity.procedures.MagicSelectedDisplayProcedure;
 import net.forger.dreamsofdivinity.procedures.AutoSprintDisplayProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -150,6 +152,13 @@ public class OverlaysOverlay {
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.dreams_of_divinity.overlays.label_auto_sprint_on"), 2, 2, -205, false);
 			if (NotEnoughManaDisplayProcedure.execute(entity))
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.dreams_of_divinity.overlays.label_not_enough_power"), 89, h - 47, -65536, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.dreams_of_divinity.overlays.label_magic_selected"), 8, h - 90, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					MagicSelectedDisplayProcedure.execute(entity), 78, h - 90, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					MagicStatsBottomDisplayProcedure.execute(entity), 8, h - 80, -3355444, false);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

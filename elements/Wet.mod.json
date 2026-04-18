@@ -3,11 +3,12 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Wet",
-    "icon": "water2",
+
     "color": {
       "value": -11176961,
       "falpha": 0.0
     },
+
     "isInstant": false,
     "mobEffectCategory": "HARMFUL",
     "renderStatusInInventory": true,
@@ -15,4 +16,4 @@
     "isCuredbyHoney": false,
     "modifiers": []
   }
-}
+

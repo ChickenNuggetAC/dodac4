@@ -7,6 +7,7 @@ import net.forger.dreamsofdivinity.network.DreamsOfDivinityModVariables;
 public class MagicStatsBottomDisplayProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
+
 			return "Power: 0 | Speed: 0 | Size: 0";
 		double selectedSpell = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).spell;
 		int power = 0;
@@ -38,5 +39,12 @@ public class MagicStatsBottomDisplayProcedure {
 			size = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicsize6;
 		}
 		return "Power: " + power + " | Speed: " + speed + " | Size: " + size;
+	}
+}
+=======
+			return "";
+		return "Power: " + new java.text.DecimalFormat("##").format(entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicpower) + " | Speed: "
+				+ new java.text.DecimalFormat("##").format(entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicspeed) + " | Size: "
+				+ new java.text.DecimalFormat("##").format(entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicsize);
 	}
 }

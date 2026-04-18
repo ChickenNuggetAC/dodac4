@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
+import net.forger.dreamsofdivinity.potion.WetMobEffect;
 import net.forger.dreamsofdivinity.potion.FireMobEffect;
 import net.forger.dreamsofdivinity.potion.WetMobEffect;
 import net.forger.dreamsofdivinity.DreamsOfDivinityMod;
