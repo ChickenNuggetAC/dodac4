@@ -10,7 +10,6 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.forger.dreamsofdivinity.client.particle.WaterMagicParticle;
 import net.forger.dreamsofdivinity.client.particle.SmokeParticle;
-import net.forger.dreamsofdivinity.client.particle.WaterMagicParticle;
 import net.forger.dreamsofdivinity.client.particle.Smoke2Particle;
 import net.forger.dreamsofdivinity.client.particle.Flame3Particle;
 import net.forger.dreamsofdivinity.client.particle.Flame32Particle;
