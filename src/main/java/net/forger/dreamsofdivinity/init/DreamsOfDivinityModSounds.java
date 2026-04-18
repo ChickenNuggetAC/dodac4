@@ -18,4 +18,7 @@ public class DreamsOfDivinityModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> FIREEXPLODE = REGISTRY.register("fireexplode", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("dreams_of_divinity", "fireexplode")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> FIRECRACKLE = REGISTRY.register("firecrackle", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("dreams_of_divinity", "firecrackle")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> MAGICCIRCLE = REGISTRY.register("magiccircle", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("dreams_of_divinity", "magiccircle")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> WATERSUMMON = REGISTRY.register("watersummon", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("dreams_of_divinity", "watersummon")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> WATERFLOW = REGISTRY.register("waterflow", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("dreams_of_divinity", "waterflow")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> WATERBURST = REGISTRY.register("waterburst", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("dreams_of_divinity", "waterburst")));
 }
