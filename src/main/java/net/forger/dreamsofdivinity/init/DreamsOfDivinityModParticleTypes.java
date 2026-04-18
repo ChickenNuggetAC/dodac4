@@ -21,5 +21,4 @@ public class DreamsOfDivinityModParticleTypes {
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FLAME_22 = REGISTRY.register("flame_22", () -> new SimpleParticleType(false));
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FLAME_32 = REGISTRY.register("flame_32", () -> new SimpleParticleType(false));
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> SMOKE_2 = REGISTRY.register("smoke_2", () -> new SimpleParticleType(false));
-	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> WATER_MAGIC = REGISTRY.register("water_magic", () -> new SimpleParticleType(false));
 }
