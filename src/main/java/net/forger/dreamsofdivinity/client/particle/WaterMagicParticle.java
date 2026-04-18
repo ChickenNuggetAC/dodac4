@@ -1,5 +1,9 @@
 package net.forger.dreamsofdivinity.client.particle;
 
+
+=======
+
+
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
@@ -9,6 +13,20 @@ import net.minecraft.client.particle.ParticleProvider;
 import net.minecraft.client.particle.ParticleRenderType;
 import net.minecraft.client.particle.SpriteSet;
 import net.minecraft.client.particle.TextureSheetParticle;
+
+=======
+=======
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.client.particle.TextureSheetParticle;
+import net.minecraft.client.particle.SpriteSet;
+import net.minecraft.client.particle.ParticleRenderType;
+import net.minecraft.client.particle.ParticleProvider;
+import net.minecraft.client.particle.Particle;
+
+
 import net.minecraft.client.multiplayer.ClientLevel;
 
 @OnlyIn(Dist.CLIENT)
@@ -29,8 +47,12 @@ public class WaterMagicParticle extends TextureSheetParticle {
 		}
 	}
 
+
 	private WaterMagicParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
+=======
+
+
 		this.setSize(0.2f, 0.2f);
 		this.quadSize *= 1.8f;
 		this.lifetime = (int) Math.max(1, 24 + (this.random.nextInt(12) - 6));
@@ -46,4 +68,8 @@ public class WaterMagicParticle extends TextureSheetParticle {
 	public ParticleRenderType getRenderType() {
 		return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
 	}
+
 }
+=======
+
+

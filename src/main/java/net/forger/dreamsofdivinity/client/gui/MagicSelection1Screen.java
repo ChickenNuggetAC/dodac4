@@ -22,6 +22,7 @@ import net.forger.dreamsofdivinity.procedures.FireUnlockedProcedure;
 import net.forger.dreamsofdivinity.procedures.FireSelectedProcedure;
 import net.forger.dreamsofdivinity.procedures.EntityproviderplayerProcedure;
 import net.forger.dreamsofdivinity.network.MagicSelection1ButtonMessage;
+import net.forger.dreamsofdivinity.network.DreamsOfDivinityModVariables;
 import net.forger.dreamsofdivinity.init.DreamsOfDivinityModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -101,8 +102,81 @@ public class MagicSelection1Screen extends AbstractContainerScreen<MagicSelectio
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.dreams_of_divinity.magic_selection_1.label_fire_magic"), -172, -103, -3407872, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.dreams_of_divinity.magic_selection_1.label_water_magic"), -172, -76, -16777012, false);
+
 		guiGraphics.drawString(this.font, "Selected Magic: " + MagicSelectedDisplayProcedure.execute(entity), -200, -58, -1, false);
 		guiGraphics.drawString(this.font, MagicStatsBottomDisplayProcedure.execute(entity), -200, -46, -3355444, false);
+=======
+		guiGraphics.drawString(this.font, "Selected Magic: " + getSelectedMagicText(), -200, -58, -1, false);
+		guiGraphics.drawString(this.font, getSelectedStatsText(), -200, -46, -3355444, false);
+	}
+
+	private String getSelectedMagicText() {
+		double selectedSpell = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).spell;
+		boolean fire = false;
+		boolean water = false;
+		if (selectedSpell == 1) {
+			fire = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).fire1;
+			water = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).water1;
+		} else if (selectedSpell == 2) {
+			fire = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).fire2;
+			water = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).water2;
+		} else if (selectedSpell == 3) {
+			fire = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).fire3;
+			water = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).water3;
+		} else if (selectedSpell == 4) {
+			fire = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).fire4;
+			water = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).water4;
+		} else if (selectedSpell == 5) {
+			fire = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).fire5;
+			water = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).water5;
+		} else if (selectedSpell == 6) {
+			fire = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).fire6;
+			water = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).water6;
+		}
+		if (fire && water) {
+			return "Steam Magic";
+		}
+		if (fire) {
+			return "Fire Magic";
+		}
+		if (water) {
+			return "Water Magic";
+		}
+		return "None";
+	}
+
+	private String getSelectedStatsText() {
+		double selectedSpell = entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).spell;
+		int power = 0;
+		int speed = 0;
+		int size = 0;
+		if (selectedSpell == 1) {
+			power = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicpower1;
+			speed = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicspeed1;
+			size = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicsize1;
+		} else if (selectedSpell == 2) {
+			power = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicpower2;
+			speed = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicspeed2;
+			size = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicsize2;
+		} else if (selectedSpell == 3) {
+			power = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicpower3;
+			speed = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicspeed3;
+			size = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicsize3;
+		} else if (selectedSpell == 4) {
+			power = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicpower4;
+			speed = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicspeed4;
+			size = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicsize4;
+		} else if (selectedSpell == 5) {
+			power = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicpower5;
+			speed = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicspeed5;
+			size = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicsize5;
+		} else if (selectedSpell == 6) {
+			power = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicpower6;
+			speed = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicspeed6;
+			size = (int) entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).magicsize6;
+		}
+		return "Power: " + power + " | Speed: " + speed + " | Size: " + size;
+
 	}
 
 	@Override
