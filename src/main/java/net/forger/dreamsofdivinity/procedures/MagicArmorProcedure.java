@@ -150,12 +150,15 @@ public class MagicArmorProcedure {
 									if (entityiterator.getPersistentData().getDouble("shielded") == 0) {
 										if (entityiterator instanceof Skill1Entity || entityiterator instanceof AttackEntity || entityiterator instanceof BendingEntity) {
 											entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), (float) entity.getPersistentData().getDouble("empowerfinal"));
-										} else {
-											if (entity.getPersistentData().getBoolean("firearmor") == true || entity.getPersistentData().getBoolean("firearmor2") == true) {
-												if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-													_entity.addEffect(new MobEffectInstance(DreamsOfDivinityModMobEffects.FIRE, 60, (int) entity.getPersistentData().getDouble("empowerfinal"), false, false));
+											} else {
+												if (entity.getPersistentData().getBoolean("firearmor") == true || entity.getPersistentData().getBoolean("firearmor2") == true) {
+													if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide()) {
+														_entity.addEffect(new MobEffectInstance(DreamsOfDivinityModMobEffects.FIRE, 60, (int) entity.getPersistentData().getDouble("empowerfinal"), false, false));
+														if (entity.getPersistentData().getBoolean("waterarmor") == true || entity.getPersistentData().getBoolean("waterarmor2") == true)
+															_entity.addEffect(new MobEffectInstance(DreamsOfDivinityModMobEffects.WET, 80, (int) (entity.getPersistentData().getDouble("empowerfinal") * 0.8), false, false));
+													}
+												}
 											}
-										}
 									}
 								}
 							}
@@ -197,12 +200,15 @@ public class MagicArmorProcedure {
 										if (entityiterator.getPersistentData().getDouble("shielded") == 0) {
 											if (entityiterator instanceof Skill1Entity || entityiterator instanceof AttackEntity || entityiterator instanceof BendingEntity) {
 												entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), (float) entity.getPersistentData().getDouble("empower"));
-											} else {
-												if (entity.getPersistentData().getBoolean("firearmor") == true) {
-													if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-														_entity.addEffect(new MobEffectInstance(DreamsOfDivinityModMobEffects.FIRE, 60, (int) entity.getPersistentData().getDouble("empower"), false, false));
+												} else {
+													if (entity.getPersistentData().getBoolean("firearmor") == true) {
+														if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide()) {
+															_entity.addEffect(new MobEffectInstance(DreamsOfDivinityModMobEffects.FIRE, 60, (int) entity.getPersistentData().getDouble("empower"), false, false));
+															if (entity.getPersistentData().getBoolean("waterarmor") == true || entity.getPersistentData().getBoolean("waterarmor2") == true)
+																_entity.addEffect(new MobEffectInstance(DreamsOfDivinityModMobEffects.WET, 80, (int) (entity.getPersistentData().getDouble("empower") * 0.8), false, false));
+														}
+													}
 												}
-											}
 										}
 										{
 											Entity _entity = entity;
@@ -263,12 +269,15 @@ public class MagicArmorProcedure {
 									if (entityiterator.getPersistentData().getDouble("shielded") == 0) {
 										if (entityiterator instanceof Skill1Entity || entityiterator instanceof AttackEntity || entityiterator instanceof BendingEntity) {
 											entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), (float) entity.getPersistentData().getDouble("empower"));
-										} else {
-											if (entity.getPersistentData().getBoolean("firearmor") == true) {
-												if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-													_entity.addEffect(new MobEffectInstance(DreamsOfDivinityModMobEffects.FIRE, 60, (int) entity.getPersistentData().getDouble("empower"), false, false));
-											}
-										}
+												} else {
+													if (entity.getPersistentData().getBoolean("firearmor") == true) {
+														if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide()) {
+															_entity.addEffect(new MobEffectInstance(DreamsOfDivinityModMobEffects.FIRE, 60, (int) entity.getPersistentData().getDouble("empower"), false, false));
+															if (entity.getPersistentData().getBoolean("waterarmor") == true || entity.getPersistentData().getBoolean("waterarmor2") == true)
+																_entity.addEffect(new MobEffectInstance(DreamsOfDivinityModMobEffects.WET, 80, (int) (entity.getPersistentData().getDouble("empower") * 0.8), false, false));
+														}
+													}
+												}
 									}
 								} else {
 									{
@@ -366,20 +375,35 @@ public class MagicArmorProcedure {
 				entity.getPersistentData().putDouble("movementright", entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).movementright);
 				entity.getPersistentData().putDouble("movementleft", entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).movementleft);
 				entity.getPersistentData().putDouble("movementup", entity.getData(DreamsOfDivinityModVariables.PLAYER_VARIABLES).movementup);
-				if (entity.getPersistentData().getBoolean("firemovement") == true || entity.getPersistentData().getBoolean("firemovement2") == true) {
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 60, 1, true, false));
-					entity.fallDistance = 0;
-					{
-						Entity _entity = entity;
-						String command = "photon fx photon:" + "fireparticle" + " entity " + _entity.getScoreboardName() + " " + 0 + " " + (-1.7) + " " + 0 + " " + 0 + " " + 0 + " " + 0 + " " + 0.2 + " " + 0.2 + " " + 0.2 + " " + (int) 0 + " " + true
-								+ " " + true;
-						if (!_entity.level().isClientSide() && _entity.getServer() != null) {
-							_entity.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _entity.position(), _entity.getRotationVector(),
-									_entity.level() instanceof ServerLevel ? (ServerLevel) _entity.level() : null, 4, _entity.getName().getString(), _entity.getDisplayName(), _entity.level().getServer(), _entity), command);
+					if (entity.getPersistentData().getBoolean("firemovement") == true || entity.getPersistentData().getBoolean("firemovement2") == true) {
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 60, 1, true, false));
+						entity.fallDistance = 0;
+						{
+							Entity _entity = entity;
+							String command = "photon fx photon:" + "fireparticle" + " entity " + _entity.getScoreboardName() + " " + 0 + " " + (-1.7) + " " + 0 + " " + 0 + " " + 0 + " " + 0 + " " + 0.2 + " " + 0.2 + " " + 0.2 + " " + (int) 0 + " " + true
+									+ " " + true;
+							if (!_entity.level().isClientSide() && _entity.getServer() != null) {
+								_entity.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _entity.position(), _entity.getRotationVector(),
+										_entity.level() instanceof ServerLevel ? (ServerLevel) _entity.level() : null, 4, _entity.getName().getString(), _entity.getDisplayName(), _entity.level().getServer(), _entity), command);
+							}
 						}
 					}
-				}
+					if (entity.getPersistentData().getBoolean("watermovement") == true || entity.getPersistentData().getBoolean("watermovement2") == true) {
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide()) {
+							_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 60, 0, true, false));
+							_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 60, 0, true, false));
+						}
+						entity.fallDistance = 0;
+						{
+							Entity _entity = entity;
+							String command = "photon fx photon:" + "smoke2" + " entity " + _entity.getScoreboardName() + " 0 -1.7 0 0 0 0 0.6 0.6 0.6 0 " + true + " " + true;
+							if (!_entity.level().isClientSide() && _entity.getServer() != null) {
+								_entity.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _entity.position(), _entity.getRotationVector(),
+										_entity.level() instanceof ServerLevel ? (ServerLevel) _entity.level() : null, 4, _entity.getName().getString(), _entity.getDisplayName(), _entity.level().getServer(), _entity), command);
+							}
+						}
+					}
 				if (entity.getPersistentData().getDouble("enableparticles") == 1) {
 					if ((entity instanceof LivingEntity _livingEntity223 && _livingEntity223.getAttributes().hasAttribute(DreamsOfDivinityModAttributes.CURRENT_BOOST)
 							? _livingEntity223.getAttribute(DreamsOfDivinityModAttributes.CURRENT_BOOST).getBaseValue()
@@ -394,11 +418,13 @@ public class MagicArmorProcedure {
 											- (entity instanceof LivingEntity _livingEntity226 && _livingEntity226.getAttributes().hasAttribute(DreamsOfDivinityModAttributes.BOOST_SPEED)
 													? _livingEntity226.getAttribute(DreamsOfDivinityModAttributes.BOOST_SPEED).getBaseValue()
 													: 0)));
-						if (entity.getPersistentData().getBoolean("firemovement") == true || entity.getPersistentData().getBoolean("firemovement2") == true) {
-							{
-								Entity _entity = entity;
-								String command = "photon fx photon:" + "fireparticle" + " entity " + _entity.getScoreboardName() + " " + 0 + " " + (-1.7) + " " + 0 + " " + 0 + " " + 0 + " " + 0 + " " + 1 + " " + 1 + " " + 1 + " " + (int) 0 + " "
-										+ true + " " + true;
+							if (entity.getPersistentData().getBoolean("firemovement") == true || entity.getPersistentData().getBoolean("firemovement2") == true || entity.getPersistentData().getBoolean("watermovement") == true
+									|| entity.getPersistentData().getBoolean("watermovement2") == true) {
+								{
+									Entity _entity = entity;
+									String command = "photon fx photon:" + ((entity.getPersistentData().getBoolean("watermovement") == true || entity.getPersistentData().getBoolean("watermovement2") == true) ? "smoke2" : "fireparticle") + " entity "
+											+ _entity.getScoreboardName() + " " + 0 + " " + (-1.7) + " " + 0 + " " + 0 + " " + 0 + " " + 0 + " " + 1 + " " + 1 + " " + 1 + " " + (int) 0 + " "
+											+ true + " " + true;
 								if (!_entity.level().isClientSide() && _entity.getServer() != null) {
 									_entity.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _entity.position(), _entity.getRotationVector(),
 											_entity.level() instanceof ServerLevel ? (ServerLevel) _entity.level() : null, 4, _entity.getName().getString(), _entity.getDisplayName(), _entity.level().getServer(), _entity), command);
@@ -410,13 +436,13 @@ public class MagicArmorProcedure {
 							} else {
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("dreams_of_divinity:firesummon")), SoundSource.PLAYERS,
+										_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse((entity.getPersistentData().getBoolean("watermovement") == true || entity.getPersistentData().getBoolean("watermovement2") == true) ? "dreams_of_divinity:waterflow" : "dreams_of_divinity:firesummon")), SoundSource.PLAYERS,
 												(float) (0.1 + (entity instanceof LivingEntity _livingEntity236 && _livingEntity236.getAttributes().hasAttribute(DreamsOfDivinityModAttributes.BOOST_SPEED)
 														? _livingEntity236.getAttribute(DreamsOfDivinityModAttributes.BOOST_SPEED).getBaseValue()
 														: 0) * 0.1),
 												1);
 									} else {
-										_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("dreams_of_divinity:firesummon")), SoundSource.PLAYERS,
+										_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse((entity.getPersistentData().getBoolean("watermovement") == true || entity.getPersistentData().getBoolean("watermovement2") == true) ? "dreams_of_divinity:waterflow" : "dreams_of_divinity:firesummon")), SoundSource.PLAYERS,
 												(float) (0.1 + (entity instanceof LivingEntity _livingEntity236 && _livingEntity236.getAttributes().hasAttribute(DreamsOfDivinityModAttributes.BOOST_SPEED)
 														? _livingEntity236.getAttribute(DreamsOfDivinityModAttributes.BOOST_SPEED).getBaseValue()
 														: 0) * 0.1),

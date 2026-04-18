@@ -76,6 +76,18 @@ public class ChargeupSkillProcedure {
 						}
 					}
 				}
+				if (immediatesourceentity.getPersistentData().getBoolean("fire") == true && immediatesourceentity.getPersistentData().getBoolean("water") == true) {
+					{
+						Entity _entity = immediatesourceentity;
+						String command = "photon fx photon:" + "smoke2" + " entity " + _entity.getScoreboardName() + " 0 0 0 " + 0 + " " + ((immediatesourceentity.getPersistentData().getDouble("yaw") + 90) * (-1)) + " "
+								+ ((immediatesourceentity.getPersistentData().getDouble("pitch2") + 90) * (-1)) + " " + (immediatesourceentity.getPersistentData().getDouble("magicsize") * 0.2) + " "
+								+ (immediatesourceentity.getPersistentData().getDouble("magicsize") * 0.2) + " " + (immediatesourceentity.getPersistentData().getDouble("magicsize") * 0.2) + " " + (int) 0 + " " + true + " " + true;
+						if (!_entity.level().isClientSide() && _entity.getServer() != null) {
+							_entity.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _entity.position(), _entity.getRotationVector(),
+									_entity.level() instanceof ServerLevel ? (ServerLevel) _entity.level() : null, 4, _entity.getName().getString(), _entity.getDisplayName(), _entity.level().getServer(), _entity), command);
+						}
+					}
+				}
 				if (immediatesourceentity.getPersistentData().getBoolean("fire") == true) {
 					{
 						Entity _entity = immediatesourceentity;

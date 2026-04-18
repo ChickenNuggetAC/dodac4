@@ -6338,6 +6338,69 @@
           "src/main/java/net/forger/dreamsofdivinity/procedures/ArmoroffProcedure.java"
         ]
       }
+    },
+    {
+      "name": "MagicSelectedDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_selected_display",
+      "metadata": {
+        "files": [
+          "src/main/java/net/forger/dreamsofdivinity/procedures/MagicSelectedDisplayProcedure.java"
+        ],
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicStatsBottomDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_stats_bottom_display",
+      "metadata": {
+        "files": [
+          "src/main/java/net/forger/dreamsofdivinity/procedures/MagicStatsBottomDisplayProcedure.java"
+        ],
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WaterMagic",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_magic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/forger/dreamsofdivinity/client/particle/WaterMagicParticle.java",
+          "src/main/resources/assets/dreams_of_divinity/particles/water_magic.json"
+        ]
+      }
+    },
+    {
+      "name": "Wet",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/forger/dreamsofdivinity/potion/WetMobEffect.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7502,6 +7565,30 @@
       ],
       "category": "player",
       "subtitle": "magic circle vibrates"
+    },
+    {
+      "name": "watersummon",
+      "files": [
+        "firesummon"
+      ],
+      "category": "player",
+      "subtitle": "water summon"
+    },
+    {
+      "name": "waterflow",
+      "files": [
+        "firecrackle"
+      ],
+      "category": "player",
+      "subtitle": "water flow"
+    },
+    {
+      "name": "waterburst",
+      "files": [
+        "fireexplode"
+      ],
+      "category": "player",
+      "subtitle": "water burst"
     }
   ],
   "tag_elements": {
@@ -7840,7 +7927,7 @@
       "gui.dreams_of_divinity.spirit_stone_gui.button_keybind_5": "Keybind 5",
       "block.dreams_of_divinity.spirit_forge": "Spirit Forge",
       "item.dreams_of_divinity.spirit_fusion_stone": "Spirit Fusion Stone",
-      "gui.dreams_of_divinity.spirit_forge_gui.label_empty1": "\u003d",
+      "gui.dreams_of_divinity.spirit_forge_gui.label_empty1": "=",
       "gui.dreams_of_divinity.spirit_forge_gui.label_empty": "+",
       "gui.dreams_of_divinity.spirit_forge_gui.button_fuse": "Fuse"
     }

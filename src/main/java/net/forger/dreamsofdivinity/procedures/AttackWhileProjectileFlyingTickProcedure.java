@@ -61,23 +61,24 @@ public class AttackWhileProjectileFlyingTickProcedure {
 			if (immediatesourceentity instanceof LivingEntity _entity)
 				_entity.setHealth((float) (1 + (entity instanceof LivingEntity _livingEntity35 && _livingEntity35.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity35.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)));
 			immediatesourceentity.getPersistentData().putBoolean("attack", true);
-			if (immediatesourceentity.getPersistentData().getBoolean("fireattack") == true) {
+			if (immediatesourceentity.getPersistentData().getBoolean("fireattack") == true || immediatesourceentity.getPersistentData().getBoolean("waterattack") == true) {
 				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("dreams_of_divinity:fireexplode")), SoundSource.PLAYERS,
-								(float) (1 + entity.getPersistentData().getDouble("attacksize") * 0.2), 1);
-					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("dreams_of_divinity:fireexplode")), SoundSource.PLAYERS, (float) (1 + entity.getPersistentData().getDouble("attacksize") * 0.2), 1,
-								false);
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse(immediatesourceentity.getPersistentData().getBoolean("waterattack") ? "dreams_of_divinity:waterburst" : "dreams_of_divinity:fireexplode")), SoundSource.PLAYERS,
+									(float) (1 + entity.getPersistentData().getDouble("attacksize") * 0.2), 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse(immediatesourceentity.getPersistentData().getBoolean("waterattack") ? "dreams_of_divinity:waterburst" : "dreams_of_divinity:fireexplode")), SoundSource.PLAYERS,
+									(float) (1 + entity.getPersistentData().getDouble("attacksize") * 0.2), 1,
+									false);
+						}
 					}
 				}
 			}
-		}
 		immediatesourceentity.setNoGravity(true);
-		if (immediatesourceentity.getPersistentData().getBoolean("fireattack") == true) {
+		if (immediatesourceentity.getPersistentData().getBoolean("fireattack") == true || immediatesourceentity.getPersistentData().getBoolean("waterattack") == true) {
 			{
 				Entity _entity = immediatesourceentity;
-				String command = "photon fx photon:" + "fireswordsweep" + " entity " + _entity.getScoreboardName() + " 0 0 0 0 0 0 " + (immediatesourceentity.getPersistentData().getDouble("attacksize")) + " "
+				String command = "photon fx photon:" + (immediatesourceentity.getPersistentData().getBoolean("waterattack") ? "smoke2" : "fireswordsweep") + " entity " + _entity.getScoreboardName() + " 0 0 0 0 0 0 " + (immediatesourceentity.getPersistentData().getDouble("attacksize")) + " "
 						+ (immediatesourceentity.getPersistentData().getDouble("attacksize")) + " " + (immediatesourceentity.getPersistentData().getDouble("attacksize")) + " " + (int) 0 + " " + true + " " + true;
 				if (!_entity.level().isClientSide() && _entity.getServer() != null) {
 					_entity.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _entity.position(), _entity.getRotationVector(), _entity.level() instanceof ServerLevel ? (ServerLevel) _entity.level() : null, 4,
@@ -97,12 +98,13 @@ public class AttackWhileProjectileFlyingTickProcedure {
 										- (entityiterator instanceof LivingEntity _livingEntity53 && _livingEntity53.getAttributes().hasAttribute(Attributes.ARMOR) ? _livingEntity53.getAttribute(Attributes.ARMOR).getValue() : 0)
 												/ (immediatesourceentity.getPersistentData().getDouble("magicpower") + 1)));
 					}
-					if (immediatesourceentity.getPersistentData().getBoolean("fireattack") == true) {
-						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(DreamsOfDivinityModMobEffects.FIRE, 60, (int) immediatesourceentity.getPersistentData().getDouble("magicpower"), false, false));
+						if (immediatesourceentity.getPersistentData().getBoolean("fireattack") == true || immediatesourceentity.getPersistentData().getBoolean("waterattack") == true) {
+							if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(immediatesourceentity.getPersistentData().getBoolean("waterattack") ? DreamsOfDivinityModMobEffects.WET : DreamsOfDivinityModMobEffects.FIRE, 60,
+										(int) immediatesourceentity.getPersistentData().getDouble("magicpower"), false, false));
 						{
 							Entity _entity = immediatesourceentity;
-							String command = "photon fx photon:" + "fireexplode" + " entity " + _entity.getScoreboardName() + " 0 0 0 0 0 0 " + (immediatesourceentity.getPersistentData().getDouble("attacksize")) + " "
+							String command = "photon fx photon:" + (immediatesourceentity.getPersistentData().getBoolean("waterattack") ? "smoke2" : "fireexplode") + " entity " + _entity.getScoreboardName() + " 0 0 0 0 0 0 " + (immediatesourceentity.getPersistentData().getDouble("attacksize")) + " "
 									+ (immediatesourceentity.getPersistentData().getDouble("attacksize")) + " " + (immediatesourceentity.getPersistentData().getDouble("attacksize")) + " " + (int) 0 + " " + true + " " + true;
 							if (!_entity.level().isClientSide() && _entity.getServer() != null) {
 								_entity.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _entity.position(), _entity.getRotationVector(),

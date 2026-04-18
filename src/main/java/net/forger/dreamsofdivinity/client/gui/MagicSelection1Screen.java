@@ -16,6 +16,8 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.forger.dreamsofdivinity.world.inventory.MagicSelection1Menu;
 import net.forger.dreamsofdivinity.procedures.WaterUnlockedProcedure;
 import net.forger.dreamsofdivinity.procedures.WaterSelectedProcedure;
+import net.forger.dreamsofdivinity.procedures.MagicStatsBottomDisplayProcedure;
+import net.forger.dreamsofdivinity.procedures.MagicSelectedDisplayProcedure;
 import net.forger.dreamsofdivinity.procedures.FireUnlockedProcedure;
 import net.forger.dreamsofdivinity.procedures.FireSelectedProcedure;
 import net.forger.dreamsofdivinity.procedures.EntityproviderplayerProcedure;
@@ -99,6 +101,8 @@ public class MagicSelection1Screen extends AbstractContainerScreen<MagicSelectio
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.dreams_of_divinity.magic_selection_1.label_fire_magic"), -172, -103, -3407872, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.dreams_of_divinity.magic_selection_1.label_water_magic"), -172, -76, -16777012, false);
+		guiGraphics.drawString(this.font, "Selected Magic: " + MagicSelectedDisplayProcedure.execute(entity), -200, -58, -1, false);
+		guiGraphics.drawString(this.font, MagicStatsBottomDisplayProcedure.execute(entity), -200, -46, -3355444, false);
 	}
 
 	@Override
